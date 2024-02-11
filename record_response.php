@@ -18,7 +18,7 @@ if (!in_array($response, $validResponses)) {
 // Store the response in a text file
 $file = 'responses.txt';
 $currentData = file_get_contents($file);
-$currentData .= $response . "\n";
+$currentData .= $response . "hi\n";
 file_put_contents($file, $currentData);
 
 // Return a JSON response (optional)
